@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Randomizer</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="output-randomizer">
+        <h1>Output Randomizer</h1>
+        <form>
+            <label for="output">Enter Lines:</label>
+            <textarea id="output"></textarea>
+
+            <label for="count">Number of Lines to Display:</label>
+            <input type="number" id="count" min="1" value="1">
+
+            <button type="button" onclick="randomizeOutput()">Randomize Output</button>
+
+            <div id="result"></div>
+
+            <button id="copyButton" onclick="copyToClipboard()">Copy Text</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

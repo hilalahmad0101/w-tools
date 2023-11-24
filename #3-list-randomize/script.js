@@ -8,7 +8,7 @@ function randomizeOutput() {
     const randomizedLines = randomize(lines);
 
     // Display the randomized output
-    document.getElementById('result').innerHTML = randomizedLines.join('</br>');
+    document.getElementById('result').innerHTML = randomizedLines.join('<br />');
 
 }
 
