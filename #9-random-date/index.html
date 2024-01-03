@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Picker</title>
+     <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="datetime-picker">
+        <h1>Date and Time Picker</h1>
+        <form>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+
+            <label for="dateTimeCount">Number of Dates/Times to Generate:</label>
+            <input type="number" id="dateTimeCount" min="1" value="5">
+
+            <label for="dateFormat">Date/Time Format:</label>
+            <select id="dateFormat">
+                <option value="MM-DD-YYYY">MM-DD-YYYY</option>
+                <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+                <option value="DD-MM-YYYY">DD-MM-YYYY</option>
+                <option value="UTC">UTC</option>
+            </select>
+
+            <button type="button" onclick="generateDates()">Generate Dates/Times</button>
+
+            <div id="result"></div>
+
+            <button id="copyButton" onclick="copyToClipboard()">Copy Text</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
